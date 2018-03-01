@@ -16,6 +16,7 @@ function getHighestScore(list, score) {
       }
     }
   }
+  // console.log('highest score is')
   // console.log(score)
   return score
 }
@@ -40,6 +41,8 @@ function tabulateAnswers() {
   var domain1 = document.getElementById('depression').getElementsByTagName('input');
   // then find score
   var domain1score = getHighestScore(domain1, depressionScore);
+  // console.log('domain1score is')
+  // console.log(domain1score)
 
   var domain2 = document.getElementById('anger').getElementsByTagName('input');
   var domain2score = getHighestScore(domain2, angerScore);
