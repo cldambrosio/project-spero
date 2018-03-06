@@ -32,3 +32,17 @@ a {
   font-weight: 700;
   color: #002060;
 }
+
+.tick text {
+  font-size: 0.85em;
+  text-anchor: end;
+}
+
+.level text {
+  text-anchor: end;
+}
+
+.bar {
+  fill: #92d050;
+  fill-opacity:0.4;
+}
