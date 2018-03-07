@@ -1,16 +1,13 @@
 function getHighestScore(answersList, score=0) {
   for (var i=0; i<answersList.length; i++) {
-    if (answersList[i].checked) {
-      if (answersList[i].value == 'v1' && score<1) {
+    if(answersList[i].checked) {
+      if(answersList[i].value === 'v1' && score<1) {
         score = 1
-      }
-      else if (answersList[i].value == 'v2' && score<2) {
+      } else if(answersList[i].value === 'v2' && score<2) {
         score = 2
-      }
-      else if (answersList[i].value == 'v3' && score<3) {
+      } else if(answersList[i].value === 'v3' && score<3) {
         score = 3
-      }
-      else if (answersList[i].value == 'v4' && score<4) {
+      } else if(answersList[i].value === 'v4' && score<4) {
         score = 4
       }
     } 
@@ -48,19 +45,35 @@ function quizResult() {
     "substanceUse"
   ]
   var result = tabulateAnswers(conditionsList);
-  // console.log(result);
   return result
 }
 
-// // Display result
-// function resultbox(condition, score) {
-//   if (domain1score >1) {
-//     // answerbox.innerHTML =
-//   }
-//   if (domain6score >0) {
-  
-//   }
-// }
+function setBarLevel(result, barId) {
+  var bar = document.getElementById(barId);
+  if(result === 0) {
+    bar.setAttribute("height", "0")
+    bar.setAttribute("y", "280")
+  } else if(result === 1) {
+    bar.setAttribute("height", "60")
+    bar.setAttribute("y", "220")
+  } else if(result === 2) {
+    bar.setAttribute("height", "120")
+    bar.setAttribute("y", "160")
+  } else if(result === 3) {
+    bar.setAttribute("height", "180")
+    bar.setAttribute("y", "100")
+  } else if(result === 4) {
+    bar.setAttribute("height", "240")
+    bar.setAttribute("y", "40")
+  }
+}
 
-document.getElementById("submit").addEventListener("click", quizResult)
-// document.getElementById("result").innerHTML = resultbox
+function displayResults() {
+  qzResult = quizResult()
+  for(var index in qzResult) {
+    setBarLevel(qzResult[index], (index+'Bar'))
+  }
+}
+
+var submitBtn = document.getElementById("submit")
+submitBtn.addEventListener("click", displayResults)
