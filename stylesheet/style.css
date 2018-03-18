@@ -46,8 +46,12 @@ a {
   text-anchor: end;
 }
 .bar {
-  fill: #92d050;
+  fill: #ffbf00;
   fill-opacity:0.4;
+}
+.bar-critical {
+  fill: #ef4700;
+  fill-opacity: 0.5;
 }
 .button {
   padding: 6px 18px;
@@ -78,4 +82,7 @@ a {
 }
 hr {
   color: #92d050;
+}
+.result-disclaimer {
+  margin: 20px;
 }

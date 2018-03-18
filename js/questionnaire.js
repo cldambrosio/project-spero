@@ -54,17 +54,17 @@ function setBarLevel(result, barId) {
     bar.setAttribute("height", "0")
     bar.setAttribute("y", "280")
   } else if(result === 1) {
-    bar.setAttribute("height", "60")
-    bar.setAttribute("y", "220")
+    bar.setAttribute("height", "75")
+    bar.setAttribute("y", "205")
   } else if(result === 2) {
-    bar.setAttribute("height", "120")
-    bar.setAttribute("y", "160")
+    bar.setAttribute("height", "135")
+    bar.setAttribute("y", "145")
   } else if(result === 3) {
-    bar.setAttribute("height", "180")
-    bar.setAttribute("y", "100")
+    bar.setAttribute("height", "195")
+    bar.setAttribute("y", "85")
   } else if(result === 4) {
-    bar.setAttribute("height", "240")
-    bar.setAttribute("y", "40")
+    bar.setAttribute("height", "255")
+    bar.setAttribute("y", "25")
   }
 }
 
