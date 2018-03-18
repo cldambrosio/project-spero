@@ -86,3 +86,13 @@ hr {
 .result-disclaimer {
   margin: 20px;
 }
+.list {
+  margin-left: 25px;
+}
+.list p {
+  -webkit-margin-before: 0.1em;
+  -webkit-margin-after: 0.1em;
+}
+h4 {
+  margin-bottom: 5px;
+}
