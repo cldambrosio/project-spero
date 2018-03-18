@@ -1,23 +1,23 @@
 script {
   display:none;
 }
-
 body {
   font-family: 'Lato', sans-serif;
+  color: #002060;
 }
-
+h1 {
+  font-size: 1.75em;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 90px;
   background-color: 
 }
-
 .logo {
   float: left;
   margin: auto auto auto 10px;
 }
-
 .menu-navbar {
   border: 2px solid #205264;
   box-sizing: border-box;
@@ -26,23 +26,37 @@ body {
   padding: 5px 10px;
   font-size: 0.75em;
 }
-
 a {
   text-decoration: none;
   font-weight: 700;
   color: #002060;
 }
-
 .tick text {
   font-size: 0.85em;
   text-anchor: end;
 }
-
 .level text {
   text-anchor: end;
 }
-
 .bar {
   fill: #92d050;
   fill-opacity:0.4;
+}
+.button-submit {
+  font-size: 1.5em;
+  padding: 6px 18px;
+  background: rgb(32, 82, 100);
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+.title {
+  margin: 40px 20px;
+}
+#wrapper {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+#test {
+  padding-left: 20px;
 }
